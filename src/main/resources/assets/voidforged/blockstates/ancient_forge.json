@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "voidforged:block/ancient_forge",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "voidforged:block/ancient_forge"
+    },
+    "facing=south": {
+      "model": "voidforged:block/ancient_forge",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "voidforged:block/ancient_forge",
+      "y": 270
+    }
+  }
+}

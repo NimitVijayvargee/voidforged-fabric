@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "nmt.voidforged.mixin",
+	"package": "net.voidforged.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 		"ExampleMixin"

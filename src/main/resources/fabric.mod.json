@@ -3,23 +3,26 @@
 	"id": "voidforged",
 	"version": "${version}",
 	"name": "voidforged",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A progression modification mod that spaces out armor and tools.",
 	"authors": [
-		"Me!"
+		"Nimit Vijayvargee"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "",
+		"sources": "https://github.com/NimitVijayvargee/voidforged-fabric"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/voidforged/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"nmt.voidforged.Voidforged"
+			"net.voidforged.Voidforged"
 		],
 		"fabric-datagen": [
-			"nmt.voidforged.VoidforgedDataGenerator"
+			"net.voidforged.VoidforgedDataGenerator"
+		],
+		"client": [
+			"net.voidforged.VoidforgedClient"
 		]
 	},
 	"mixins": [
