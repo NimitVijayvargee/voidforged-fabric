@@ -1,10 +1,11 @@
 {
-  "block.voidforged.ancient_forge": "Ancient Forge",
+  "block.voidforged.ancient_forge":            "Ancient Forge",
 
 
-  "container.voidforged.ancient_forge": "Ancient Forge",
+  "container.voidforged.ancient_forge":        "Ancient Forge",
 
 
-  "item.voidforged.ancient_forge_blueprint": "Ancient Forge Blueprint",
-  "item.voidforged.void_shard": "Void Shard"
+  "item.voidforged.ancient_forge_blueprint":   "Ancient Forge Blueprint",
+  "item.voidforged.void_shard":                "Void Shard",
+  "item.voidforged.soul_fuel_cell":            "Soul Fuel Cell"
 }
