@@ -2,7 +2,6 @@ package net.voidforged.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
-import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -11,12 +10,12 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.voidforged.Voidforged;
 
-import static net.minecraft.block.Blocks.createLightLevelFromLitBlockState;
 
 public class ModBlocks {
 
     public static final Block ANCIENT_FORGE = registerBlock("ancient_forge",
-            new AncientForgeBlock (AbstractBlock.Settings.copy(Blocks.BLAST_FURNACE)));
+            new Block (AbstractBlock.Settings.copy(Blocks.BLAST_FURNACE)
+                    .luminance(state -> 15)));
 
 
     private static Block registerBlock(String name, Block block) {
