@@ -1,21 +1,26 @@
 package net.voidforged.block;
 
+import com.mojang.serialization.MapCodec;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
+import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 import net.voidforged.Voidforged;
+import org.jetbrains.annotations.Nullable;
 
 
 public class ModBlocks {
 
     public static final Block ANCIENT_FORGE = registerBlock("ancient_forge",
-            new Block (AbstractBlock.Settings.copy(Blocks.BLAST_FURNACE)
-                    .luminance(state -> 15)));
+            new AncientForgeBlock (AbstractBlock.Settings.copy(Blocks.BLAST_FURNACE)));
 
 
     private static Block registerBlock(String name, Block block) {
